@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Todo JS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="header__title">Todo JS</h1>
+        <h3 class="header__subtitle">My todo's list</h3>
+      </header>
+
+      <section class="section">
+        <h3 class="section__title">Create a new Todo:</h3>
+        <form id="create-todo__form" name="todo-form">
+          <input
+            id="create-todo__input"
+            name="title"
+            type="text"
+            placeholder="Title"
+          />
+
+          <button type="submit" class="btn btn--primary">Create Todo</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <h3 class="section__title">Todos:</h3>
+        <div class="todos-container">
+          <!-- Injected Todos -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
